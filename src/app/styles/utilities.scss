@@ -1,0 +1,11 @@
+// Utility styles
+.rotate-clockwise-90 {
+    transform: rotate(90deg);
+  }
+
+.make-center {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}

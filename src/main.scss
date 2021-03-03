@@ -1,0 +1,21 @@
+/*----------------------------------
+  1.Settings
+  2.tools
+  3.Generic
+  4.Elements
+  5.Components
+  6.Utilities
+-------------------------------------*/
+// Base units and variables definition
+@import "./app/styles/settings.global.scss";
+@import "./app/styles/settings.colors.scss";
+
+// Core html elements
+@import "./app/styles/elements.scss";
+
+// Components with selectors
+@import "./app/styles/components.board.scss";
+@import "./app/styles/components.button.scss";
+
+// High Specificity elements 
+@import "./app/styles/utilities.scss";

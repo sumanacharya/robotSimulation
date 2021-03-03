@@ -1,0 +1,96 @@
+// Boards and Grid Component
+.mainBoard {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.6),
+      rgba(93, 93, 93, 0.4)
+    ),
+    url("https://bellroy.imgix.net/cms_images/1259/background-texture-repeat.jpg");
+  padding: 60px 0;
+  border-top: 1px solid $color-offBlackLight;
+
+  .mainBoard__grid {
+    display: grid;
+    position: relative;
+    width: $boardWidth;
+    height: $boardHeight;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-auto-flow: column;
+    border-bottom: 1px solid $color-fadeGray;
+    border-right: 1px solid $color-fadeGray;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    background-color: $color-offWhite;
+    background-image: linear-gradient(315deg, $color-offWhite 0%, offWhiteStrong 74%);
+
+    .item {
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      color: $color-fadeGray;
+      border-top: 1px solid $color-fadeGray;
+      border-left: 1px solid $color-fadeGray;
+    }
+  }
+
+  .creature {
+    position: absolute;
+    height: 75px;
+    width: 75px;
+
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 0px;
+      height: 0px;
+      border-right: 17px solid transparent;
+      border-top: 17px solid $color-primary;
+      border-left: 17px solid $color-primary;
+      border-bottom: 17px solid $color-primary;
+      border-top-left-radius: 17px;
+      border-top-right-radius: 17px;
+      border-bottom-left-radius: 17px;
+      border-bottom-right-radius: 17px;
+    }
+  }
+
+  .controls {
+    position: relative;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 70px;
+
+    .controls__keys {
+      width: 375px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .button {
+      width: 32.5%;
+
+      &.button--up {
+        width: 100%;
+        border-radius: 0 0 4px 4px;
+        border-bottom: 1px solid $color-white;
+      }
+
+      &:focus {
+          outline: none;
+          background-color: $color-secondary;
+      }
+    }
+  }
+}
+
+.section__top {
+  text-align: center;
+  padding: 30px;
+  position: relative;
+  background: $color-offWhiteLight;
+}

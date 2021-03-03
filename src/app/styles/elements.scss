@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  h1 {
+    font-size: 30px;
+    line-height: 30px;
+    padding: 0;
+    margin: 10px;
+    color: $color-offBlack;
+    font-weight: bold;
+  }
+}
+
